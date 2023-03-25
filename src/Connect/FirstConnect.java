@@ -23,9 +23,9 @@ public class FirstConnect {
         for (int i = 0; i < responseJSON.length(); i++) {
 
             RespondModel resmodel = new RespondModel();
-//            System.out.println("ANJIM "+resmodel);
+
             JSONObject myJSONObject =responseJSON.getJSONObject(i);
-//            System.out.println("ANJIM "+myJSONObject);
+
 
             String Harga = myJSONObject.getString("i_sell");
             resmodel.setI_sell(Harga);
